@@ -4,15 +4,8 @@ function TodoList({ todos, handleComplete }) {
   return (
     <ul>
       {todos.map((todo) => (
-        <li key={todo.id} style={{ marginBottom: "10px" }}>
-          <span
-            style={{
-              textDecoration: todo.completed ? "line-through" : "none",
-              marginRight: "10px"
-            }}
-          >
-            {todo.text}
-          </span>
+        <li key={todo.id} >
+          <p>{todo.text}</p>
 
           {!todo.completed && (
             <button onClick={() => handleComplete(todo.id)}>
