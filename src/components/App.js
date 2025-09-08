@@ -19,10 +19,9 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <div style={{ padding: "20px" }}>
-      <h1>Todo List</h1>
+      <h1>Parent Component</h1>
+      <h2></h2>
       <TodoList todos={todos} handleComplete={handleComplete} />
-    </div>
     </div>
   )
 }
